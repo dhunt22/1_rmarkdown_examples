@@ -1,11 +1,12 @@
 ---
 title: "Discharge Data Example"
-author: "Matthew Ross"
-date: "1/24/2022"
+author: "Matthew Ross, Devin Hunt"
+date: "`r Sys.Date()`"
 output:
   html_document:
     toc: true
     toc_float: true
+    toc_depth: 3
 ---
 
 ```{r setup, include=FALSE}
@@ -75,8 +76,7 @@ q_xts <- xts(q$q, order.by = q$Date)
 
 
 dygraph(q_xts) %>%
-  dyAxis("y", label = "Discharge (cfs)") %>%
-  dyOptions(drawPoints = TRUE, pointSize = 2)
+  dyAxis("y", label = "Discharge (cfs)")
 
 ```
 
@@ -120,8 +120,19 @@ todays date, not just a static date you enter.
 
 ## DyGraph example. 
 
+```{r}
+
+q_xts <- xts(q$q, order.by = q$Date)
+
+
+dygraph(q_xts, main = "Discharge of the Cache La Poudre River At Fort Collins, CO") %>%
+  dyAxis("y", label = "Discharge (cfs)") %>%
+  dyOptions(drawPoints = TRUE, pointSize = 2)
+
+
+```
 
 ## Poudre Paragraph
 
-
+The Cache La Poudre River provides significant amounts of water to the 
 
