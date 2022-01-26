@@ -2,8 +2,8 @@
 title: "Discharge Data Example"
 author: "Matthew Ross, Devin Hunt"
 date: "`r Sys.Date()` Dynamic Date"
-output:
-  html_document:
+output: 
+    html_document:
     toc: true
     toc_float: true
     toc_depth: 3
@@ -138,4 +138,4 @@ The Cache La Poudre River, first settled against in the 1870's, provided water f
 
 Sources: 
 [Rivers.gov Description](https://www.rivers.gov/rivers/cache-la-poudre.php#:~:text=Historical%20accounts%20trace%20the%20name,railroad%20building%20in%20northern%20Colorado.)
-[]()
+[The Historical Marker Database](https://www.hmdb.org/m.asp?m=89987)
