@@ -1,0 +1,13 @@
+name: "mywebpage"
+author: "Devin Hunt"
+output_dir: "docs"
+# output:
+#   html_document:
+#     self_contained: no
+navbar:
+  title: "Cache La Poudre River Assignment 1"
+  left:
+  - text: "html Output"
+    href: index.html
+  - text: "revealjs Output"
+    href: index_talk.html
